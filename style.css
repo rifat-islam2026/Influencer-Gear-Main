@@ -1,0 +1,152 @@
+/*Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Fira+Sans:wght@400;500&family=Inter:wght@400;600;800&family=Montserrat:wght@400;700;800;900&family=Niconne&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/*header css start */
+.header-logo {
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    padding-top: 85px;
+}
+
+.navbar nav ul {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar nav ul li svg {
+    width: 24px;
+}
+
+/*header css end */
+
+/*hero-section css start */
+.hero-section {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.hero-content h1 {
+    width: 582px;
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.hero-content p {
+    width: 505px;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+
+.primary-btn {
+    width: 196px;
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    display: flex;
+    align-items: center;
+
+}
+
+.primary-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.arrow {
+    color: #fff;
+    font-size: 24px;
+}
+
+.hero-img {
+    width: 440px;
+    margin-right: 20px;
+}
+
+/*hero-section css end */
+
+/*logo css start */
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 35px;
+
+}
+
+hr {
+    color: #C0CCDA;
+    width: 1110px;
+    height: 1px;
+    margin: 0 auto;
+}
+
+/*logo css end */
+
+.section-title{
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    width: 329px;
+    height: 476px;
+    margin-left: 120px;
+
+}
+
+.collection {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+
+}
+
+.collection-img img {
+    width: 300px;
+
+}
