@@ -9,8 +9,12 @@
 }
 
 .container {
-    width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.container-mobile{
+    display: none;
 }
 
 /*header css start */
@@ -25,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 80px;
-    padding-top: 85px;
+    padding-top: 50px;
 }
 
 .navbar nav ul {
@@ -60,15 +64,14 @@
 }
 
 .hero-content h1 {
-    width: 582px;
+    /*width: 582px;*/
     color: #3A3A3A;
     font-size: 52px;
     font-weight: 700;
-    line-height: 70px;
 }
 
 .hero-content p {
-    width: 505px;
+    
     color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
@@ -81,7 +84,8 @@
     border-radius: 41px;
     background: #E02C6D;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    /*align-items: center;*/
 
 }
 
@@ -94,12 +98,13 @@
 }
 
 .arrow {
+    width: 14px;
     color: #fff;
     font-size: 24px;
 }
 
 .hero-img {
-    width: 440px;
+    /*width: 440px;*/
     margin-right: 20px;
 }
 
@@ -222,17 +227,15 @@ i.bx.bx-right-arrow-alt {
 .Featured-products {
     display: flex;
     justify-content: space-between;
-    padding-top: 190px;
-    margin-bottom: 100px;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .Featured-img img {
-    width: 404px;
+    max-width: 404px;
 }
 
-/*.Featured-content {
-    margin-left: 96px;
-}*/
 .Featured-content h2 {
     color: #0A0826;
     font-size: 38px;
@@ -243,14 +246,15 @@ i.bx.bx-right-arrow-alt {
 
 .Featured-content p {
     color: #6C6C6C;
-    width: 501px;
+    
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
 }
 
 .joinNow {
-    display: inline-flex;
+    /*display: inline-flex;*/
+    width: 155px;
     padding: 10px 24px;
     background: #E02C6D;
     margin-top: 15px;
@@ -287,6 +291,8 @@ footer {
 }
 
 .footer-content p {
+    font-family: sans-serif;
+    color: #D9DBE1;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
@@ -300,3 +306,164 @@ footer {
 }
 
 /*Footer css end */
+
+/*Responsive css */
+
+
+@media only screen and (max-width: 992px){
+    .mainbox {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        margin: 0 auto;
+        grid-gap: 30px;
+    }
+    .container{
+        max-width: 85%;
+    }
+    .logo {
+        
+        flex-wrap: wrap;
+    }
+    .Featured-content h2 {
+        font-size: 26px;
+        line-height: 36px;
+
+    }
+    .Featured-products {
+        padding: 100px 0;
+        flex-direction: column;
+        
+    
+    }
+    .Featured-content{
+        order: 0;
+    }
+    .container-mobile{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px ;
+    }
+    .containerforDesktop{
+        display: none;
+    }
+
+   
+
+}
+
+@media only screen and (max-width: 688px) {
+    .container {
+        max-width: 80%;
+    }
+    .container-mobile{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px ;
+    }
+    .containerforDesktop{
+        display: none;
+    }
+
+    .header-section {
+        flex-direction: column;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-img img{
+        width: 202px;
+        margin-bottom: 50px;
+    }
+    .hero-img{
+        margin: 0 auto;
+    }
+    .hero-content h1 {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .hero-content p {
+        
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .primary-btn {
+        margin: 0 auto;
+    }
+
+    .primary-btn a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+   
+    .mainbox {
+        
+        grid-template-columns:  1fr;
+        
+    }
+
+
+    .Featured-products {
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .Featured-products h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .Featured-content p {
+        width: 329px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .joinNow {
+        margin: 20px auto;
+    }
+
+    .Featured-img {
+        margin: 0 auto;
+
+    }
+
+    .Featured-img img {
+        width: 299px;
+    }
+
+    .footer-content h3 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .footer-content p {
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    .logo {
+        
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
